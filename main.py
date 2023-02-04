@@ -3,7 +3,7 @@ import os
 
 k = 0
 
-def delprint(text:str="Type a string in",delay_time:int=.05): #Delayed printing function
+def delprint(text:str="Type a string in",delay_time:int=.0000005): #Delayed printing function
     for character in text:      
         sys.stdout.write(character) #writes the character
         sys.stdout.flush()
@@ -154,6 +154,14 @@ input()
 delprint('— думал про себя разведчик.')
 ok()
 
-# 14 is max k up to that moment
+delprint('Наконец он дошел до двери курилки. На ней висела табличка "не петь". Шуренберг удивился, ведь агента Петю центр отозвал ещё месяц назад. Он отворил die Tür и вошел в узкий и насквозь порочный круг нацистских курильщиков. Его встретили Гёхлер, Зинберг, Бицманн и Меллингхер. «Ayo wasaaap» — подумал Шуренберг. И пятеро друзей дружно затянулись. Ой благодать пошла!.. Шуренберга потянуло на стихи:\n1)\nDeutschland! Mein Herz in Flammen\nWill dich lieben und verdammen\nDeutschland! Dein Atem kalt\nSo jung und doch so alt\n2)\nЯ\n достаю\n     из широких штанин\nдубликатом\n      бесценного груза.\nЧитайте,\n     завидуйте,\n           я —\n             гражданин\nСоветского Союза.\n3)\nОй пошел наш Шуренберг\nПогулять по улице!\nВсе - что немки, что Вайсберг\nПо улыбке на лицах!\n\nА когда заговорил\nНаш разведчик бравый,\nТак и выпал крокодил\nПоедавший травы!')
+
+
+answer = int(input())
+if answer == 1: k += 2
+elif answer == 2: k -= 2
+elif answer == 3: k -= 1
+
+# 19 is max k up to that moment
 
 print(k)
