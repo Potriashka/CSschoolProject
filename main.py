@@ -13,7 +13,7 @@ def delprint(text:str="Type a string in",delay_time:int=.000005): #Delayed print
 def ok():
     print('\nНажмите enter')
     input()
-    os.system('cls')
+    os.system('cls') # For windows guys
 
 def badEnd():
     delprint('«Да вы шпион, Шуренберг! Расстрелять на месте!»\nПослышались выстрелы. «Нет, мы стрелы» — легко парировал Шуренберг. Так и закончились дни славного разведчика, служившего на благо родины.')
