@@ -373,4 +373,4 @@ ok()
 
 # 24 is max k up to that moment
 
-print(k)
+print(f'Ваш счет - {k} баллов')
