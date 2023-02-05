@@ -3,7 +3,7 @@ import os
 
 k = 0
 
-def delprint(text:str="Type a string in",delay_time:int=.000005): #Delayed printing function
+def delprint(text:str="Type a string in",delay_time:int=.05): #Delayed printing function
     for character in text:      
         sys.stdout.write(character) #writes the character
         sys.stdout.flush()
